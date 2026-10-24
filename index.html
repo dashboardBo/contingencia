@@ -40,7 +40,7 @@
 <script>
 /* ===== CONEXIÓN CON GOOGLE APPS SCRIPT (GitHub Pages) =====
    Pegue aquí la URL de su implementación web (termina en /exec). */
-const API_URL="PEGAR_AQUI_LA_URL_DE_APPS_SCRIPT/exec";
+const API_URL="https://script.google.com/macros/s/AKfycbzn63nh2WUGQ8BLWwv-oyHedIisiJ9l8WbcUkEuQqleCrac0wvvmTF_FRItVC8ea23E5Q/exec";
 const CATALOGO_KEY="vb_catalogos_v2",CATALOGO_TTL=24*60*60*1e3,TIMEOUT_ENVIO_MS=18e4;
 function apiGet(accion){return fetch(API_URL+"?action="+encodeURIComponent(accion),{redirect:"follow"}).then(function(r){return r.json()})}
 function apiPost(datos){const ctrl=new AbortController,t=setTimeout(function(){ctrl.abort()},TIMEOUT_ENVIO_MS);
